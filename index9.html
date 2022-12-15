@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1,.box2,.box3{
+            width: 100px;
+            height: 100px;
+        }
+        .box1 {
+            background-color: red;
+        }
+        .box2 {
+            background-color: green;
+        }
+        .box3 {
+            background-color: yellow;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <input type="text" name="" id="">
+    <button>Button</button>
+</body>
+<script>
+    var input = document.querySelector('input')
+    var button = document.querySelector('button')
+    var square1 = document.querySelector('.box1')
+    var square2 = document.querySelector('.box2')
+    var square3 = document.querySelector('.box3')
+
+
+    button.addEventListener('click', function() {
+        if(input.value == 1) {
+            square1.style.background = 'blue'
+        } else if(input.value == 2) {
+            square2.style.background = 'pink'
+        } else if(input.value == 3) {
+            square3.style.background = 'black'
+        }
+    })
+</script>
+</html>

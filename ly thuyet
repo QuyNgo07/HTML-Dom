@@ -1,0 +1,71 @@
+1 so su kien cua DOM
+
+a[href = 'http://google.com']
+
+=> mousemove(
+    event.clientX, event.clientY
+    event.target
+    event.currentTarget
+) 
+
+
+// var p = document.querySelector('p')
+// DOM: 
+    // window
+    // document.querySelector()
+    //     querySelectorAll
+    //     getElementById
+    //     getElementsClassName
+    //     getElementsByTagName
+
+<p class="title product" >Xin chaos <span>Nodemy</span></p>
+// // ===================== property 
+// p.innerHTML //Xin chaos <span>Nodemy</span>
+// p.innerText //Xin chaos Nodemy
+// p.outerHTML = '' //<p>Xin chaos <span>Nodemy</span></p>
+// p.style
+// p.classList [title, product]  .add .remove .toggle('hide')
+// p.parentElement
+// p.children
+// p.nextSibling
+// p.value
+
+// ========================= method
+// p.getAttribute('class')
+// p.setAttribute('class', 'red' )
+// p.append()
+// p.clone(true)
+// p.remove()
+// document.createElement('img')
+
+// ======================== . event
+// p.addEventListener('mousemove', function(){console.log('move');})
+// p.addEventListener('mouseover', function(){console.log('over');})
+// window.addEventListener('keypress', function(e){
+//     console.log(e.keyCode);
+// } )
+
+// onmousedown
+// onmouseup
+// onmousemove
+// onmouseover : vao cua
+// onmouseleave : ra cua
+// onscroll
+// onBlur
+// onFocus
+
+// keyboard
+// keypress
+// keyup
+// keydown
+//     event.keyWhich
+
+
+var input = document.querySelector('input')
+input.addEventListener('keypress', function(e){
+    if(e.keyCode == 13){
+        console.log(input.value);
+        input.value = ''
+    }
+})
+

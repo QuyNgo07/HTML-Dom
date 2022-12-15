@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button>Button</button>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, mollitia.
+      Cum error, vitae optio a provident beatae facere, dolores cupiditate
+      labore asperiores tempora explicabo eos ipsa unde est dolorem quod!
+    </p>
+  </body>
+  <script>
+    var button = document.querySelector('button')
+    var para = document.querySelector('p')
+    var count = 0
+
+    button.addEventListener('click',function() {
+        count++
+        if(count % 2 > 0) {
+            console.log(document.querySelector(para).innerHTML = 'i have changed')
+        } else {
+            console.log(document.querySelector(para))
+        }
+        
+    })
+  </script>
+</html>
